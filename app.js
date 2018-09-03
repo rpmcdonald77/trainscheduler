@@ -1,9 +1,7 @@
 
   // Initialize Firebase
 
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
+
   var config = {
     apiKey: "AIzaSyDTd2LJa1e-lTY3eoG-Zzlakr7p_mrzbZY",
     authDomain: "trainscheduler-688d2.firebaseapp.com",
@@ -12,12 +10,11 @@
     storageBucket: "trainscheduler-688d2.appspot.com",
     messagingSenderId: "1097882001361"
   };
-  firebase.initializeApp(config);
-</script>
+
   firebase.initializeApp(config);
   var database = firebase.database();
 $('#addTrainBtn').on("click", function() {
-  take user input
+  // take user input
 
   var trainName = $("#trainNameInput").val().trim();
   var destination = $("#destinationInput").val().trim();
